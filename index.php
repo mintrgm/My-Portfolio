@@ -48,7 +48,7 @@ if(isset($_POST["submit"])){
 
 <body>
     <section id="header" class="fade-in">
-        <video autoplay loop muted playsinline src="video/yourname.mp4" class="vid"></video>
+        <video autoplay loop muted playsinline src="video/your_name.mp4" class="vid"></video>
         <nav>
             <a href="#"><img src="img/logo.png" alt="Logo"></a>
             <div class="nav-links">
@@ -72,7 +72,7 @@ if(isset($_POST["submit"])){
 
     <section id="gallery" class="fade-in">
         <video class="vid" autoplay loop playsinline>
-        <source src="video/gallery.mp4" type="video/mp4">
+        <source src="video/galleryy.mp4" type="video/mp4">
         </video>    
     </section>
 
