@@ -1,27 +1,3 @@
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "artgallery";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
-
-if (!$conn){
-    die("Connection fail");
-} 
-
-if(isset($_POST["submit"])){
-    $name= $_POST["name"];
-    $email= $_POST["email"];
-    $message= $_POST["message"];
-
-    $sql="insert into contactme(name,email,message) values('$name','$email','$message')";
-    $result = mysqli_query($conn, $sql);
-}
-?> 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -547,7 +523,7 @@ if(isset($_POST["submit"])){
             </div>
         </div>
             <div class="contactForm">
-              <form method="POST" action="index.php">
+              <form method="GET" action="">
                 <h2>Send Message</h2>
                 <div class = "inputBox">
                   <input type = "text" name = "name" id="name" required = "required">
